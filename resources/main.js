@@ -64,7 +64,7 @@ function checkWord(){
       keyPaint(curLetter, false);
     }
   }
-  result = confirm((corrLetterCnt == 5) ? 'Победитель!' : (curRow > 4)? 'GAME OVER' : 'Слово не угадано! Попробуй еще.');
+  result = confirm((corrLetterCnt == 5) ? 'Победитель!' : (curRow > 4)? `Игра окончена! Правильное слово - ${curWord}` : 'Слово не угадано! Попробуй еще.');
   if ((corrLetterCnt == 5) ||  (curRow > 4)){
     document.location.reload();
   }
