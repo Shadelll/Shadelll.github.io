@@ -4,18 +4,26 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Вордл со Словами из 5 Букв</title>
-<!--   <link rel="shortcut icon" href="https://wordlegame.org/android-chrome-512x512.png" type="image/png"> -->
-  <meta name="description"
-    content="Играйте в игру Wordle со словами из пяти букв!">
-  <link href="css/wordle.min.css" rel="stylesheet">
+  <meta name="description"  content="Играйте в игру Wordle со словами из пяти букв!">
+  <link href="css/wordle.min.css" rel="stylesheet">     <!--ПОДКЛЮЧЕНИЕ CSS И JS ФАЙЛА-->
   <script async="" src="resources/main.js"></script>
 </head>
 
 <body class=" " style="overflow-y: visible; cursor: default;">
-  <div class="Game" style="display: block;">
+  <div class="schet">
+    <p>Счёт:</p>
+    <p class="true">0/0</p>
+  </div>
+  <div class="Game">
+    <div class="hello">
+      <p class="hi">Здравствуй, друг</p>
+      <p class="rules">В этой игре ты за <b>6</b> попыток должен будешь отгадать загадываемое слово, используя только свой мозг и буквы на клавиатуре 
+        <i>(не забудь поменять раскладку, здесь все слова на русском)</i></p>
+      <button class="butt">Начать</button>
+    </div>
     <div id="game-wrapper">
       <div class="game_rows">
-        <div class="Row">
+        <div class="Row">       <!-- СТРОКИ-ЯЧЕЙКИ -->
           <div class="Row-letter" data-animation="none"><sup style="display: none;"></sup></div>
           <div class="Row-letter" data-animation="none"><sup style="display: none;"></sup></div>
           <div class="Row-letter" data-animation="none"><sup style="display: none;"></sup></div>
@@ -56,48 +64,6 @@
           <div class="Row-letter" data-animation="none"><sup style="display: none;"></sup></div>
           <div class="Row-letter" data-animation="none"><sup style="display: none;"></sup></div>
           <div class="Row-letter" data-animation="none"><sup style="display: none;"></sup></div>
-        </div>
-      </div>
-      <div class="Game-keyboard">
-        <div class="Game-keyboard-row">
-          <div tabindex="-1" class="Game-keyboard-button">й</div>
-          <div tabindex="-1" class="Game-keyboard-button">ц</div>
-          <div tabindex="-1" class="Game-keyboard-button">у</div>
-          <div tabindex="-1" class="Game-keyboard-button">к</div>
-          <div tabindex="-1" class="Game-keyboard-button">е</div>
-          <div tabindex="-1" class="Game-keyboard-button">н</div>
-          <div tabindex="-1" class="Game-keyboard-button">г</div>
-          <div tabindex="-1" class="Game-keyboard-button">ш</div>
-          <div tabindex="-1" class="Game-keyboard-button">щ</div>
-          <div tabindex="-1" class="Game-keyboard-button">з</div>
-          <div tabindex="-1" class="Game-keyboard-button">х</div>
-          <div tabindex="-1" class="Game-keyboard-button">ъ</div>
-        </div>
-        <div class="Game-keyboard-row">
-          <div tabindex="-1" class="Game-keyboard-button">ф</div>
-          <div tabindex="-1" class="Game-keyboard-button">ы</div>
-          <div tabindex="-1" class="Game-keyboard-button">в</div>
-          <div tabindex="-1" class="Game-keyboard-button">а</div>
-          <div tabindex="-1" class="Game-keyboard-button">п</div>
-          <div tabindex="-1" class="Game-keyboard-button">р</div>
-          <div tabindex="-1" class="Game-keyboard-button">о</div>
-          <div tabindex="-1" class="Game-keyboard-button">л</div>
-          <div tabindex="-1" class="Game-keyboard-button">д</div>
-          <div tabindex="-1" class="Game-keyboard-button">ж</div>
-          <div tabindex="-1" class="Game-keyboard-button">э</div>
-        </div>
-        <div class="Game-keyboard-row">
-          <div tabindex="-1" class="Game-keyboard-button Game-keyboard-button-wide">Delete</div>
-          <div tabindex="-1" class="Game-keyboard-button">я</div>
-          <div tabindex="-1" class="Game-keyboard-button">ч</div>
-          <div tabindex="-1" class="Game-keyboard-button">с</div>
-          <div tabindex="-1" class="Game-keyboard-button">м</div>
-          <div tabindex="-1" class="Game-keyboard-button">и</div>
-          <div tabindex="-1" class="Game-keyboard-button">т</div>
-          <div tabindex="-1" class="Game-keyboard-button">ь</div>
-          <div tabindex="-1" class="Game-keyboard-button">б</div>
-          <div tabindex="-1" class="Game-keyboard-button">ю</div>
-          <div tabindex="-1" class="Game-keyboard-button Game-keyboard-button-wide">Enter</div>
         </div>
       </div>
     </div>
